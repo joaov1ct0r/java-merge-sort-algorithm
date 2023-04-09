@@ -9,12 +9,10 @@ public class MergeSort {
         int[] left_half = new int[mid];
         int[] right_half = new int[arr.length - mid];
 
-        // copying the elements of array into left_half
         for (int i = 0; i < mid; i++) {
             left_half[i] = arr[i];
         }
 
-        // copying the elements of array into right_half
         for (int i = mid; i < arr.length; i++) {
             right_half[i - mid] = arr[i];
         }
